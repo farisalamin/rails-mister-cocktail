@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">Mister Cocktail</a>
+  <%= link_to "Cocktail Cellar", root_path, class: "navbar-brand" %>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/cocktails">Cocktails</a>
+        <%= link_to "Cocktails", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/cocktails/new">+ Add New Cocktail</a>
+        <%= link_to "+ Add New Cocktail", new_cocktail_path, class: "nav-link" %>
       </li>
     </ul>
   </div>
